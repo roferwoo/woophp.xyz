@@ -1,4 +1,4 @@
-# woophp.com
+# woophp.xyz
 woophp.com是WOO框架的官网。
 
 # WOO
