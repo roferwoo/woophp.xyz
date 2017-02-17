@@ -1,0 +1,9 @@
+RewriteEngine on
+# 指定一个新的位置作为重写规则的根目录
+#RewriteBase /
+# 如果文件存在就直接访问文件
+RewriteCond %{REQUEST_FILENAME} !-f
+# 如果目录存在就直接访问目录
+RewriteCond %{REQUEST_FILENAME} !-d
+# 将所有其他URL重写到index.php/url
+RewriteRule ^(.*)$ index.php/$1 [PT,L]
